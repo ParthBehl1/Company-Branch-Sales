@@ -65,27 +65,6 @@ Notes and suggestions
 - If you want the repo to exclude raw data files in future, add patterns to `.gitignore` (already included in this repo).
 - The project currently committed CSV files; if you later want to keep data out of git, remove them from the index with `git rm --cached <file>` and commit.
 
-Git tips
-
-- Set your global git name/email to avoid auto-generated commit identity:
-
-```bash
-git config --global user.name "Your Name"
-git config --global user.email you@example.com
-```
-
-- Switch remote to SSH (optional):
-
-```bash
-git remote set-url origin git@github.com:ParthBehl1/Company-Branch-Sales.git
-```
-
-Next steps
-
-- Clean and standardize columns across branch CSVs (consistent column names, same column order).
-- Add a small example script that runs the analysis end-to-end and exports figures as PNG.
-- Add tests or CI to validate that `combine_data` produces a non-empty `branches.csv`.
-
 License & contact
 
 This repo doesn't include a license. If you want to open-source it, add a `LICENSE` file.
